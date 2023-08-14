@@ -2,7 +2,7 @@
   "openapi": "3.0.0",
   "info": {
     "description": "This is a sample server Petstore server.  You can find out more about Swagger at [http://swagger.io](http://swagger.io) or on [irc.freenode.net, #swagger](http://swagger.io/irc/).  For this sample, you can use the api key `special-key` to test the authorization filters.",
-    "version": "1.0.2",
+    "version": "1.0.3",
     "title": "Swagger Petstore",
     "termsOfService": "http://swagger.io/terms/",
     "contact": {
@@ -52,7 +52,7 @@
         ],
         "summary": "Add a new pet to the store",
         "description": "",
-        "operationId": "addPet",
+        "operationId": "addPets",
         "requestBody": {
           "$ref": "#/components/requestBodies/Pet"
         },
@@ -123,7 +123,7 @@
                 "enum": [
                   "available",
                   "pending",
-                  "sold"
+                  "sold!"
                 ],
                 "default": "available"
               }
